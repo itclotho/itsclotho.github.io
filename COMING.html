@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOTHO</title>
+    <style>
+        body {
+            background-color: #1E1E1E;
+            background-image: url('https://www.example.com/your-image.jpg'); /* Замените на ссылку на вашу картинку */
+            background-size: cover;
+            background-repeat: repeat-x;
+            animation: moveBackground 10s linear infinite; /* Анимация для движения фона */
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+        }
+        @keyframes moveBackground {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 100% 0;
+            }
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .navbar img {
+            height: 50px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .navbar a:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .text-content {
+            flex: 1;
+            text-align: left;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 35px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            border-radius: 8px;
+        }
+        .download {
+            background-color: #15ADFC;
+            color: white;
+        }
+        .discord {
+            background-color: #5865F2;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn img {
+            width: 24px;
+            height: 24px;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            filter: brightness(0.8);
+        }
+        .screenshot {
+            flex: 1;
+            max-width: 55%;
+            margin-left: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <!-- Используйте правильный URL для логотипа -->
+        <img src="https://cdn.discordapp.com/attachments/1254010172368617513/1343293978321227808/cllllll_v3.png?ex=67bcbf81&is=67bb6e01&hm=cda5f75d186f946e565b5771866f72f48bbab5ddc9525f6c3b3d6f098dc7e957&" alt="CLOTHO Logo"> 
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Screenshots</a>
+    </div>
+    <div class="container">
+        <div class="text-content">
+            <h1>LET THE CLOTHO BEGIN</h1>
+            <p>Experience CLOTHO, the best scripting tool...</p>
+            <div class="buttons">
+                <a href="https://i.pinimg.com/originals/d4/00/dc/d400dccb59f213080d4717aef2d339d1.gif"><button class="btn download">Download</button></a>
+                <a href="https://discord.gg/xKzQvj5u5T"><button class="btn discord">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/discord-white-icon.png" alt="Discord Icon">Discord
+                </button></a>
+            </div>
+        </div>
+        <img class="screenshot" src="https://www.pixelstalk.net/wp-content/uploads/images1/Video-Wall-Still-Roblox-Backgrounds.jpg" alt="CLOTHO Screenshot">
+    </div>
+</body>
+</html>
